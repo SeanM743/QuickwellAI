@@ -1,0 +1,105 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-dark-teal: #007C89;
+  --accent-electric-teal: #00FFE3;
+  --neutral-dark: #111111;
+  --neutral-medium: #444444;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 188 100% 27%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 180 100% 50%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 180 100% 50%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000000;
+  color: white;
+  overflow-x: hidden;
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 255, 227, 0.3);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 255, 227, 0.5);
+}
+
+.circuit-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(0, 124, 137, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 255, 227, 0.05) 0%, transparent 50%);
+}
+
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 124, 137, 0.2) 100%);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 255, 227, 0.1);
+}
+
+.timeline-line {
+  background: linear-gradient(90deg, #007C89 0%, #00FFE3 100%);
+}
+
+.scroll-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.scroll-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007C89 0%, #00FFE3 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 255, 227, 0.3);
+}
+
+.nav-shrink {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.antibody-glow {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
